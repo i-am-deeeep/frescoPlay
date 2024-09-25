@@ -21,7 +21,7 @@ from inventoryApp import views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("inventory/items/",views.ItemListAV.as_view()),
-    path("inventory/items/<int:pk>/",views.ItemAV.as_view()),
+    path("inventory/items/<int:pk>",views.ItemAV.as_view()),
     path("items/query/<str:category>/",views.ItemFilterAV.as_view()),
     path("items/sort/",views.ItemSortAV.as_view())
 ]
